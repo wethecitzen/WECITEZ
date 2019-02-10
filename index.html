@@ -99,11 +99,16 @@ a:active {
 }
  
 </style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- bootstap css -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
  <div >
   <ul>
-  <li><a class="active" href="index.html">Home</a></li>
+  <li><a class="active" href="index.html">HOME</a></li>
   <li><a href="#news">POLITICAL PARTIES</a></li>
   <li><a href="links.html">LATEST NEWS</a></li>
   <li><a href="index.html">VIDEOS</a></li>
@@ -156,6 +161,32 @@ a:active {
 <div class="id2">
 <iframe width="560" height="315" title="15"src="https://www.youtube.com/embed/DsUwV89462g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<div class="jumbotron jumbo">
+  <h2>Get Current Weather Information</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center text-primary">Enter City Name:</h3>
+      <div id="error"></div>
+    </div>
+    <div class="row form-group form-inline" id="city">
+      <input type="text" name="cityname" id="cityname" class="form-control" placeholder="Enter city name"></input>
+      <button id="submitCity" class="btn btn-primary" onclick="getWeather(document.getElementById('cityname').value);">Search City</button>
+    </div>
+        <div id="weather-data">
+    
+      </div>
+  </div>
+</div>
+<!--Jquery-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--bootstarp javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 <footer style="text-align:center">
 This Page is Developed by  vote4future ©2019<br />
